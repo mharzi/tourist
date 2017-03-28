@@ -1,0 +1,11 @@
+{
+  "name": "kataTourist",
+  "version": "0.0.0",
+  "description": "a kata for SG",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "MUSTAPHA MHARZI",
+  "license": "ISC"
+}
