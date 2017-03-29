@@ -10,8 +10,8 @@ describe('Listing visits', function() {
         scope = $rootScope.$new();
 
         visitListController = $controller('VisitListController', {
-            '$scope': scope
-        });
+                '$scope': scope
+            });
     }));
 
     it('should have a list of visits', function() {

@@ -1,17 +1,17 @@
 {
-  "name": "kataTourist",
+  "name": "visit-planner",
   "version": "0.0.0",
-  "description": "a kata for SG",
-  "author": "MUSTAPHA M'HARZI",
-  "license": "ISC",
+  "description": "a kata for laterooms",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/.bin/karma start --single-run",
+    "test": "./node_modules/.bin/mocha & ./node_modules/.bin/karma start --single-run",
     "start": "node ./start.js PORT=3001 "
   },
+  "author": "Paul D'Ambra",
+  "license": "ISC",
   "devDependencies": {
     "angular-mocks": "^1.5.7",
     "browserify": "^13.0.1",

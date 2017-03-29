@@ -1,4 +1,14 @@
-# TOURIST KATA
+# Visit Planner for LateRooms interview
+
+NB Only tested with NodeJS 4.4.5
+
+# Task
+
+The description [from github](https://github.com/LateRoomsGroup/interview-katas/blob/2bc43b2e724c38ac4f54c337a53779ccdb28ea3c/full-stack.md) is included below
+
+#The LateRooms Group full-stack task
+
+Please take as much time as you see appropriate to tackle this task. Your solution will be the basis for a discussion during our interview.
 
 ##The task
 
@@ -38,14 +48,13 @@ The initial list should be served up from an endpoint that you create and should
 You should then create a basic web application and add as many of the following pieces of functionality as you have time to:
 
 1. Retrieve the cities from the endpoint you created and list them along with their country and attractions
-2. Ability to add a new city to the list (provide basic validation)
+2. Ability to add a new city to the list
+    * Provide basic validation
 3. Allow a user to mark a city as visited/unvisited
 4. Show a visual counter of the number of cities visited/unvisited
 5. Filter the cities by visited state (i.e. visited or unvisited)
 6. Sort the cities by visited state (i.e. visited or unvisited)
-7. Search for city by attraction or country_
+7. Search for city by attraction or country
 
-
-You should aim to complete as many of these things as possible, demonstrating a good
-understanding of architecture, design and best practice. Don’t hesitate to show off with some
-fancy CSS, responsiveness, and HTML5
+You should aim to complete as many of these things as possible, demonstrating a good understanding of architecture, design and best practice.
+__Testing methodologies (TDD and/or BDD) should be used.__
