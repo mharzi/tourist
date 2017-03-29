@@ -11,7 +11,6 @@ describe('server', function () {
 
     it('should return expected JSON on start', function done() {
         const expectedCities = ['Paris', 'Liverpool', 'York', 'Las Vegas', 'Beijing'];
-
         request(app)
             .get('/visits')
             .expect('Content-Type', /json/)
@@ -23,4 +22,11 @@ describe('server', function () {
                 done();
             });
     });
+
+    it('should return html at the root url', function done() {
+        request(app)
+            .get('/')
+            .expect('Content-Type', /html/)
+            .expect(200, done);
+});
 });
