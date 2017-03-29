@@ -1,16 +1,18 @@
 {
-  "name": "visit-planner",
+  "name": "kataTourist",
   "version": "0.0.0",
-  "description": "a kata for laterooms",
+  "description": "a kata for SG",
+  "author": "MUSTAPHA M'HARZI",
+  "license": "ISC",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha & ./node_modules/.bin/karma start --single-run",
-    "start": "node ./start.js PORT=3001 "
+    "start": "browserify ./server/public/scripts/app/main.js -o ./server/public/scripts/bundle.js | node ./start.js PORT=3001 "
   },
-  "author": "Paul D'Ambra",
+  "author": "MUSTAPHA MHARZI",
   "license": "ISC",
   "devDependencies": {
     "angular-mocks": "^1.5.7",
@@ -22,6 +24,7 @@
     "karma-browserify": "^5.0.5",
     "karma-chrome-launcher": "^1.0.1",
     "karma-jasmine": "^1.0.2",
+    "karma-mocha-reporter": "^2.0.4",
     "karma-phantomjs-launcher": "^1.0.0",
     "mocha": "^2.5.3",
     "phantomjs-prebuilt": "^2.1.7",
