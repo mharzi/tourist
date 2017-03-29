@@ -2,14 +2,19 @@ module.exports = function(config) {
     config.set({
 
         basePath: '',
-        frameworks: ['jasmine'],
+        frameworks: ['browserify', 'jasmine'],
 
         files: [
-            'test/karma/*spec.js'
+            'test/karma/**/*spec.js'
         ],
 
         exclude: [
         ],
+
+        browserify: {
+            debug: true,
+            transform: [ ]
+        },
 
         preprocessors: {
         },
@@ -17,7 +22,7 @@ module.exports = function(config) {
         port: 9876,
 
         colors: true,
-        logLevel: config.LOG_INFO,
+        logLevel: config.LOG_DEBUG,
         autoWatch: true,
         singleRun: false,
         concurrency: Infinity
