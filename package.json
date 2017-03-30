@@ -1,6 +1,6 @@
 {
   "name": "kataTourist",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a kata for SG",
   "author": "MUSTAPHA M'HARZI",
   "license": "ISC",
@@ -12,8 +12,6 @@
     "test": "./node_modules/.bin/mocha & ./node_modules/.bin/karma start --single-run",
     "start": "browserify ./server/public/scripts/app/main.js -o ./server/public/scripts/bundle.js | node ./start.js PORT=3001 "
   },
-  "author": "MUSTAPHA MHARZI",
-  "license": "ISC",
   "devDependencies": {
     "angular-mocks": "^1.5.7",
     "browserify": "^13.0.1",
